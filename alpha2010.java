@@ -1,9 +1,8 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 class Solution {
-    public int solution(int[] A) {
-       	Set<Integer> mySet = new HashSet<>();
+	public int solution(int[] A) {
+		Set<Integer> mySet = new HashSet<>();
 		int flag = 0;
 		for (int i = 0; i < A.length; i++) {
 			if (!mySet.contains(A[i])) {
@@ -12,5 +11,5 @@ class Solution {
 			}
 		}
 		return flag;
-    }
+	}
 }
